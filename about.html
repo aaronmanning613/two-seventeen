@@ -22,7 +22,6 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li><a href="index.html">Home</a></li>
 							<li class="active"><a href="about.html">About</a></li>
 							<li><a href="blog.html">Blog</a></li>
 							<li><a href="results.html">Results</a></li>
@@ -42,23 +41,34 @@
 									<h1>About 217 Endurance</h1>
 								</header>
 
-								<div class="image main"><img src="images/pic01.jpg" alt="Team Training" /></div>
+								<div class="image main"><img src="images/team-finish-line.jpg" alt="Team Training" /></div>
 								
+								<!-- Who We Are Section with Side Image -->
 								<h2>Who We Are</h2>
-								<p>217 Endurance is a group of endurance athletes with a common goal - pushing our personal limits and getting faster.</p>
+								<div class="row" style="align-items:center;">
+									<div class="col-5 col-12-small">
+										<img src="images/team-finish-line.jpg" alt="Team Finish Line" style="width:100%;border-radius:8px;" />
+									</div>
+									<div class="col-7 col-12-small">
+										<p>217 Endurance is a group of endurance athletes with a common goal - pushing our personal limits and getting faster.</p>
+										<p>Athletes have a wide range of abilities and goals - from runners targeting their first half marathon to experienced athletes chasing qualification for Ironman World Championships and the Boston Marathon. If you want to be a better athlete tomorrow than you are today, 217 is for you.</p>
+									</div>
+								</div>
 
-								<p>Athletes have a wide range of abilities and goals - from runners targeting their first half marathon to experienced athletes chasing qualification for Ironman World Championships and the Boston Marathon. If you want to be a better athlete tomorrow than you are today, 217 is for you.</p>
-
-								<!-- Why 217 Section -->
+								<!-- Why 217 Section with Side Image -->
 								<h2>Why 217?</h2>
-								<figure>
-									<img src="images/peter-hanna-cabot-trail.jpg" alt="Peter Hanna at Cabot Trail Relay" style="max-width:100%;height:auto;" />
-								</figure>
-								<p>The name "217 Endurance" is a hat-tip to Peter Hanna, the "Godfather" of Cape Breton running. While battling cancer in 2022, Peter became the first and only person to complete all 17 legs of the Cabot Trail Relay twice. 217 aims to embody Peter's lifelong dedication, resolve and mental toughness - but most of all his love of sport and competition.</p>
-								<p>You can learn more about Peter's life and legacy here:<br>
-								<a href="https://www.youtube.com/watch?v=1KWvDoikODg" target="_blank">Peter Hanna Tribute Video</a><br>
-								<a href="https://cbtriathlon.wordpress.com/2014/05/07/peter-the-godfather-hanna/?fbclid=IwY2xjawKYGahleHRuA2FlbQIxMABicmlkETFXa2pPMzJRNnJTMnFXaGdsAR71ml9_IzQ8Lav9Uuan0SfItus83m1nHxeLkcxZlLikOAWhh9sVIw59QviMhg_aem_CokveUZqGDSCosZmW-dr1Q" target="_blank">Peter "The Godfather" Hanna – Blog Article</a>
-								</p>
+								<div class="row" style="align-items:center;">
+									<div class="col-5 col-12-small">
+										<img src="images/peter-hanna-cabot-trail.jpg" alt="Peter Hanna at Cabot Trail Relay" style="width:100%;border-radius:8px;" />
+									</div>
+									<div class="col-7 col-12-small">
+										<p>The name "217 Endurance" is a hat-tip to Peter Hanna, the "Godfather" of Cape Breton running. While battling cancer in 2022, Peter became the first and only person to complete all 17 legs of the Cabot Trail Relay twice. 217 aims to embody Peter's lifelong dedication, resolve and mental toughness - but most of all his love of sport and competition.</p>
+										<p>You can learn more about Peter's life and legacy here:<br>
+											<a href="https://www.youtube.com/watch?v=1KWvDoikODg" target="_blank">Peter Hanna Tribute Video</a><br>
+											<a href="https://cbtriathlon.wordpress.com/2014/05/07/peter-the-godfather-hanna/?fbclid=IwY2xjawKYGahleHRuA2FlbQIxMABicmlkETFXa2pPMzJRNnJTMnFXaGdsAR71ml9_IzQ8Lav9Uuan0SfItus83m1nHxeLkcxZlLikOAWhh9sVIw59QviMhg_aem_CokveUZqGDSCosZmW-dr1Q" target="_blank">Peter "The Godfather" Hanna – Blog Article</a>
+										</p>
+									</div>
+								</div>
 
 								<!-- Coach Section -->
 								<h2>Coach</h2>
@@ -67,7 +77,7 @@
 										<img src="images/coach-aaron.jpg" alt="Coach Aaron after a race" style="max-width:100%;height:auto;border-radius:8px;" />
 									</div>
 									<div class="col-8 col-12-small">
-										<h3>Aaron</h3>
+										<h3>Aaron Manning</h3>
 										<p>Aaron picked up running in 2014 when a buddy challenged him to run a half marathon, and he hasn't stopped running since. He has competed for clubs in Toronto, Montreal and Halifax and amassed personal bests of 2:23:36 in the marathon, 1:07:58 in the half and 6:43 in the beer mile, but his proudest running accomplishment came in 2024 when he helped the Slow Ships break the Cabot Trail Relay record in 15:19:34.</p>
 										<p>The pillar of Aaron's coaching philosophy is consistency – the ultimate goal is to support each athlete in building a training regimen that allows them to achieve both near term racing goals and instill long term habits that work in sync with their lifestyle. No two athletes are the same, so no two athletes will get the exact same training plan.</p>
 									</div>
@@ -94,8 +104,26 @@
 								</div>
 
 								<h3>Interested?</h3>
-								<p>We would love to hear from you! Email: <a href="mailto:aaron.manning@217endurance.ca">aaron.manning@217endurance.ca</a></p>
-
+								<p>We would love to hear from you! Fill out the form below or email: <a href="mailto:aaron.manning@217endurance.ca">aaron.manning@217endurance.ca</a></p>
+								<form method="POST" action="mailto:aaron.manning@217endurance.ca" enctype="text/plain">
+									<div class="fields">
+										<div class="field">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" required />
+										</div>
+										<div class="field">
+											<label for="email">Email</label>
+											<input type="email" name="email" id="email" required />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="4" required></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+									</ul>
+								</form>
 								<p>Want to see if the group is right for you? Come join for a free workout. We meet most Tuesdays in Coronation Park at 6pm. Reach out ahead of time to confirm.</p>
 							</section>
 
