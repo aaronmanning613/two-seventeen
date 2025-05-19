@@ -1,7 +1,7 @@
 217 Endurance Club Website
 =========================
 
-This is the website for 217 Endurance, an endurance sport club based in Toronto. The site is built as a static HTML/CSS site and is fully responsive.
+This is the website for [217 Endurance](https://217endurance.ca), an endurance sport club based in Toronto. The site is built as a static HTML/CSS site and is fully responsive.
 
 Main Features
 -------------
