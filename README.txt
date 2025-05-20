@@ -17,7 +17,7 @@ Main Features
 - **Results Page:**
   - Recent race results and team achievements
 - **Header:**
-  - Temporary logo (replace `images/logo-temp.png` with your own logo when ready)
+  - Temporary logo (replace `images/temp-logo.jpg` with your own logo when ready)
   - Navigation links to all main pages
 - **Footer:**
   - Contact email and social media links (Instagram, Strava)
@@ -25,7 +25,7 @@ Main Features
 Customization
 -------------
 - **Logo:**
-  - Replace `images/logo-temp.png` with your own logo file (recommended size: ~48px tall)
+  - Replace `images/temp-logo.jpg` with your own logo file (recommended size: ~48px tall)
 - **Images:**
   - Update images in the `images/` directory to reflect your club, coach, and events
   - Team photo: `images/team-finish-line.jpg`

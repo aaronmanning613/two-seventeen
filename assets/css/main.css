@@ -3227,8 +3227,8 @@ input, select, textarea {
 		overflow: hidden;
 		background-color: #212931;
 		background-image: url('../../images/bg.jpg');
-		background-size: 100% auto;
-		background-position: top center;
+		background-size: cover;
+		background-position: center center;
 		background-repeat: no-repeat;
 		background-attachment: scroll;
 	}
@@ -3241,8 +3241,8 @@ input, select, textarea {
 			height: 100%;
 			background-color: #212931;
 			background-image: url('../../images/bg.jpg');
-			background-size: 100% auto;
-			background-position: top center;
+			background-size: cover;
+			background-position: center center;
 			background-repeat: no-repeat;
 			background-attachment: scroll;
 			z-index: -1;
