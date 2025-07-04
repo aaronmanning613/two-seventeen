@@ -3325,7 +3325,6 @@ table.alt tbody tr td {
 
 /* Wrapper */
 
-/* Update this section in main.css */
 #wrapper {
   -moz-transition: opacity 0.5s ease;
   -webkit-transition: opacity 0.5s ease;
@@ -3334,14 +3333,22 @@ table.alt tbody tr td {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  background-color: #212931;
+  min-height: 100vh;
+  background-color: #212931; /* Keep the fallback color */
+}
+
+#wrapper::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   background-image: url("../../images/217bg.png");
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  /* Change this: */
-  background-attachment: fixed; /* Ensures it's fixed to the viewport */
-  min-height: 100vh; /* Make sure the wrapper is at least viewport height */
+  z-index: -1; /* Places the background behind your content */
 }
 
 /* This section already looks correct for a fixed background,

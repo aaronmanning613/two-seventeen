@@ -28,7 +28,7 @@ Customization
   - Replace `images/temp-logo.png` with your own logo file (recommended size: ~48px tall)
 - **Images:**
   - Update images in the `images/` directory to reflect your club, coach, and events
-  - Team photo: `images/team-finish-line.jpg`
+  - Team photo: `images/team-finish-line.png`
   - Coach photo: `images/coach-aaron.jpg`
   - Peter Hanna tribute: `images/peter-hanna-cabot-trail.jpg`
 - **Contact Info:**
