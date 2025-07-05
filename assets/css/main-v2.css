@@ -3354,7 +3354,6 @@ table.alt tbody tr td {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Keep this fixed too */
   z-index: -1;
 }
 
