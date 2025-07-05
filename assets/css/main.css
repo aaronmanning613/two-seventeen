@@ -4829,10 +4829,3 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   background-position: center;
   background-repeat: no-repeat;
 }
-
-@media screen and (max-width: 1024px) {
-  #wrapper {
-    background-image: none !important;
-    background-attachment: scroll !important;
-  }
-}
