@@ -2948,7 +2948,7 @@ ol li {
 }
 
 ul {
-  list-style: none;
+  list-style: disc;
   margin: 0 0 2rem 0;
   padding-left: 1rem;
 }
