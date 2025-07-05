@@ -3343,7 +3343,7 @@ table.alt tbody tr td {
 }
 
 /* This section already looks correct for a fixed background,
-   but ensure the image path is correct relative to main.css */
+   but ensure the image path is correct relative to main-v2.css */
 #wrapper > .bg {
   position: absolute; /* or fixed, depending on the desired behavior */
   top: 0;
