@@ -3333,8 +3333,8 @@ table.alt tbody tr td {
   position: relative;
   z-index: 1;
   overflow: hidden;
+  background-color: #212931;
   min-height: 100vh;
-  background-color: #212931; /* Keep the fallback color */
 }
 
 #wrapper::before {
@@ -3348,7 +3348,7 @@ table.alt tbody tr td {
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  z-index: -1; /* Places the background behind your content */
+  z-index: -1;
 }
 
 /* This section already looks correct for a fixed background,
