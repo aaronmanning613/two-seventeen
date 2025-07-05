@@ -3326,11 +3326,19 @@ table.alt tbody tr td {
 /* Wrapper */
 
 #wrapper {
+  -moz-transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.5s ease;
+  -ms-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
   position: relative;
   z-index: 1;
   overflow: hidden;
-  min-height: 100vh;
-  background-color: transparent;
+  background-color: #212931;
+  background-image: url("../../images/217bg.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   min-height: 100vh;
 }
 
@@ -4820,4 +4828,11 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1024px) {
+  #wrapper {
+    background-image: none !important;
+    background-attachment: scroll !important;
+  }
 }
