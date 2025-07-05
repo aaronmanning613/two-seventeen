@@ -3326,29 +3326,12 @@ table.alt tbody tr td {
 /* Wrapper */
 
 #wrapper {
-  -moz-transition: opacity 0.5s ease;
-  -webkit-transition: opacity 0.5s ease;
-  -ms-transition: opacity 0.5s ease;
-  transition: opacity 0.5s ease;
   position: relative;
   z-index: 1;
   overflow: hidden;
-  background-color: #212931;
   min-height: 100vh;
-}
-
-#wrapper::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-image: url("../../images/217bg.png");
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  z-index: -1;
+  background-color: transparent;
+  min-height: 100vh;
 }
 
 /* This section already looks correct for a fixed background,
@@ -4822,4 +4805,19 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
     box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
     visibility: visible;
   }
+}
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+
+  background-image: url("../../images/217bg.png");
+  background-color: #1e252d;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
