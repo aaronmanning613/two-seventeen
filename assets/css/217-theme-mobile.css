@@ -1,0 +1,6 @@
+@media screen and (max-width:700px) {
+  #nav { flex-wrap:wrap; gap:14px; padding:16px 5vw; }
+  #nav ul.links { order:3; width:100%; justify-content:space-between; }
+  #nav ul.links li { display:block!important; }
+  #nav ul.links li a { padding:0; font-size:.65rem; }
+}
