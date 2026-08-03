@@ -1,0 +1,11 @@
+#main .image.main.results-feature {
+  display: block;
+  background: var(--cream);
+}
+
+#main .image.main.results-feature img {
+  width: 100%;
+  max-height: none;
+  height: auto;
+  object-fit: contain;
+}

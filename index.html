@@ -202,13 +202,16 @@
         .intro {
             display: grid;
             grid-template-columns: 1fr 1.1fr;
-            gap: 10vw;
-            align-items: start
+            gap: clamp(3rem, 6vw, 7rem);
+            align-items: center
         }
 
         .intro h2 {
-            position: sticky;
-            top: 24px
+            margin-bottom: 2rem
+        }
+
+        .intro-copy {
+            max-width: 570px
         }
 
         .copy {
@@ -216,18 +219,31 @@
         }
 
         .new-photo {
-            margin-top: 1.5rem;
+            min-height: 500px;
             overflow: hidden
+        }
+
+        .new-photo img,
+        .new-photo {
+            height: 100%;
+            object-fit: cover
         }
 
         .story {
             display: grid;
-            grid-template-columns: 1.15fr .85fr
+            grid-template-columns: 1.15fr .85fr;
+            gap: clamp(3rem, 6vw, 7rem);
+            padding: 0 5vw
         }
 
         .story .copy {
             align-self: center;
-            padding: 5vw
+            padding: clamp(3.8rem, 8vw, 8rem) 0
+        }
+
+        .story .copy h2,
+        .coach .copy h2 {
+            margin-bottom: 2rem
         }
 
         .story-photo,
@@ -244,7 +260,7 @@
         .coach {
             display: grid;
             grid-template-columns: .7fr 1.3fr;
-            gap: 7vw;
+            gap: clamp(3rem, 6vw, 7rem);
             align-items: center;
             padding-top: 0
         }
@@ -388,13 +404,13 @@
             .hero-photo {
                 position: relative;
                 inset: auto;
-                height: 320px;
-                margin: 2rem -5vw -4rem
+                height: auto;
+                margin: 2rem -5vw 0
             }
 
             .hero-photo img {
-                transform: scale(1.15);
-                transform-origin: 60% 32%
+                height: auto;
+                transform: none
             }
 
             .hero-photo:after {
@@ -408,8 +424,17 @@
             }
 
             .intro h2 {
-                position: static;
                 margin-bottom: 2rem
+            }
+
+            .intro {
+                padding: 4.5rem 5vw 0
+            }
+
+            .new-photo {
+                min-height: 0;
+                height: auto;
+                margin-top: 2.5rem
             }
 
             .story {
@@ -417,7 +442,7 @@
             }
 
             .story .copy {
-                padding: clamp(3.8rem, 8vw, 8rem) 0
+                padding: 4.5rem 0 2.5rem
             }
 
             .story .copy h2 {
@@ -425,23 +450,29 @@
             }
 
             .story-photo {
-                height: 360px
+                height: auto;
+                aspect-ratio: 4 / 3
             }
 
             .coach {
                 display: flex;
-                flex-direction: column
+                flex-direction: column;
+                padding: 4.5rem 5vw 0
             }
 
             .coach .copy {
                 order: 1;
-                margin-bottom: 2rem
+                margin-bottom: 2.5rem
             }
 
             .coach-photo {
                 order: 2;
-                height: 400px;
+                height: auto;
                 margin: 0
+            }
+
+            .coach-photo img {
+                height: auto
             }
 
             .offer-grid,
@@ -477,15 +508,13 @@
             <div class="hero-photo"><img src="images/aaron-race.jpg" alt="Aaron competing in a race"></div>
         </section>
         <section class="intro">
-            <div>
+            <div class="intro-copy">
                 <h2>Who We Are</h2>
-            </div>
-            <div class="copy">
                 <p>Athletes have a wide range of abilities and goals - from runners targeting their first half marathon
                     to experienced athletes chasing qualification for Ironman World Championships and the Boston
-                    Marathon. If you want to be a better athlete tomorrow than you are today, 217 is for you.</p><img
-                    class="new-photo" src="images/team-finish-line.png" alt="Team Training">
+                    Marathon. If you want to be a better athlete tomorrow than you are today, 217 is for you.</p>
             </div>
+            <img class="new-photo" src="images/team-finish-line.png" alt="Team Training">
         </section>
         <section class="story">
             <div class="copy">
